@@ -1,0 +1,23 @@
+<view class="container"> 
+
+
+<form bindsubmit="formSumbit">
+ <!--账号-->
+ <view class="inputView"> 
+  <label class="loginLab">账号</label> 
+  <input class="inputText" name='phone' placeholder="请输入账号" /> 
+ </view> 
+ <view class="line"></view> 
+ 
+ <!--密码-->
+ <view class="inputView"> 
+  <label class="loginLab">密码</label> 
+  <input class="inputText" name = 'password' password="true" placeholder="请输入密码" /> 
+ </view> 
+ 
+ <!--按钮-->
+ <view class="loginBtnView"> 
+  <button class="loginBtn" form-type='submit' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}">登录</button> 
+ </view> 
+ </form>
+</view>

@@ -1,0 +1,18 @@
+<view>
+<button class="btn-test" bindtap="btnTest">测试</button>
+  <!-- modal弹窗-->
+  <modalView show="{{showModa}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view>产品名称： {{result.status}}</view>
+        <view>产品条形码： {{result.data.barCode}}</view>
+        <view>批发价： {{result.data.tradePrice}}</view>
+        <view>建议零售价： {{result.data.retailPrice}}</view>
+        <view>产品名称： {{result.status}}</view>
+        <view>产品条形码： {{result.data.barCode}}</view>
+        <view>批发价： {{result.data.tradePrice}}</view>
+        <view>建议零售价： {{result.data.retailPrice}}</view>
+      </scroll-view>
+    </view>
+  </modalView>
+</view>

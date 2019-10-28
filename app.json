@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cig/choose/choose",
+    "pages/cig/popwindow/pipwindow",
+    "pages/cig/input/input",
+    "pages/logs/logs",
+    "pages/cig/scan/scan",
+    "components/modal/modal",
+    "pages/cig/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

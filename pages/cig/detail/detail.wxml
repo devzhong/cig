@@ -1,0 +1,35 @@
+<view class="container"> 
+
+<form bindsubmit='searchBox'>
+
+<modalView show="{{showModa}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view >卷烟名称：{{result.data.cigName}}</view>
+        <view >产品类型： {{result.data.cigType}}</view>
+        <view >焦油量： {{result.data.tarContent}}</view>
+        <view>烟碱量： {{result.data.nicotineContent}}</view>
+        <view>一氧化碳： {{result.data.co}}</view>
+        <view>包装形式： {{result.data.packageType}}</view>
+        <view>烟支规格： {{result.data.cigSpecification}}</view>
+        <view>小盒零售价： {{result.data.smallPrice}}</view>
+        <view>条盒零售价： {{result.data.barPrice}}</view>
+        <view>上市时间： {{result.data.timeMarket}}</view>
+        <view>小盒条码： {{result.data.smallBarCode}}</view>
+        <view>条盒条码： {{result.data.barBarCode}}</view>
+      </scroll-view>
+    </view>
+  </modalView>
+
+ <!--关键字-->
+ <view class="inputView"> 
+  <label class="loginLab">关键字</label> 
+  <input class="inputText" name = 'qcode' placeholder="请输入关键字"/> 
+ </view> 
+ 
+ <!--按钮-->
+ <view class="loginBtnView"> 
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" form-type='submit'>查询</button> 
+ </view> 
+</form>
+</view>
